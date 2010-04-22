@@ -1,0 +1,4 @@
+*.pyc
+grate.egg-info/*
+.coverage
+*.cov2emacs.log
