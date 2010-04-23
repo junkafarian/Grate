@@ -1,6 +1,6 @@
 from setuptools import setup, find_packages
 
-version = '0.0'
+version = '0.1'
 
 setup(name='grate',
       version=version,
@@ -16,7 +16,7 @@ setup(name='grate',
       ],
       entry_points="""
       # -*- Entry points: -*-
-      [paste.app_factory]
-      grater = grate:make_app
+      [paste.filter_app_factory]
+      grater = grate:GrateMiddleware
       """,
       )
